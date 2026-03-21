@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Formulário de Cadastro</legend>
+        
+        <form>
+            <p>
+                Nome: <input type="text" name="nome">
+            </p>
+            
+            <p>
+                Sexo: 
+                <input type="radio" name="sexo" value="masculino"> Masculino
+                <input type="radio" name="sexo" value="feminino"> Feminino
+            </p>
+
+            <p>
+                Estado Civil: 
+                <select name="estado_civil">
+                    <option value=""></option>
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="divorciado">Divorciado(a)</option>
+                    <option value="viuvo">Viúvo(a)</option>
+                </select>
+            </p>
+
+            <p>
+                Email: <input type="email" name="email" placeholder="email@email.com">
+            </p>
+
+            <p>
+                Endereço: <input type="text" name="endereco">
+            </p>
+
+            <p>
+                Número: <input type="number" name="numero" placeholder="1-1000">
+            </p>
+
+            <p>
+                Data de Nascimento: <input type="date" name="data_nascimento">
+            </p>
+
+            <p>
+                Telefone: <input type="tel" name="telefone" placeholder="(99) 99999-9999">
+            </p>
+
+            <p>
+                Página pessoal (site)<br>
+                <input type="url" name="site" placeholder="https://meusite.com">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                
+            </p>
+        </form>
+    </fieldset>
+
+</body>
+</html>
