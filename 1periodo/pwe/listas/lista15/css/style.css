@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+.oswald-<uniquifier> {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none; /* retira o sublinhado */
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+ul{
+    /* border: 1px solid black; */
+    background-color: black;
+    display: flex; /* define o ul como container */
+    flex-direction: row; /* organiza os itens do menu */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px; /* tira o espaçamento dos bullets */
+}
+
+ul li{
+    /* border: 1px solid pink; */
+    list-style: none; /* tira o traço do link */
+    border: 2px solid black;
+    font-family: "Oswald";
+            
+}
+
+.box1 {
+    border: 3px solid black;
+    width: 120px;
+    height: 40px;
+    background-image: url('../img/faceBlack.png');
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+.box1:hover{
+    background-image: url('../img/face.png');
+    border-bottom: 3px solid blue;
+
+}
+.box1:hover a{
+    color: blue;
+}
+
+.box2 {
+    border: 3px solid black;
+    width: 120px;
+    height: 40px;
+    background-image: url('../img/instaBlack.png');
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+.box2:hover{
+    background-image: url('../img/insta.png');
+    border-bottom: 3px solid darkorchid;
+}
+.box2:hover a{
+    color: darkorchid;
+}
+
+
+.box3 {
+    border: 3px solid black;
+    width: 120px;
+    height: 40px;
+    background-image: url('../img/mapsBlack.png');
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.box3:hover{
+    background-image: url('../img/maps.png');
+    border-bottom: 3px solid green;
+
+}
+.box3:hover a {
+    color: green;
+}
+
+.box4 {
+    border: 3px solid black;
+    width: 120px;
+    height: 40px;
+    background-image: url('../img/twitterBlack.png');
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+.box4:hover{
+    background-image: url('../img/twitter.png');
+    border-bottom: 3px solid yellow;
+}
+.box4:hover a {
+    color: yellow;
+}
+
+.box5 {
+    border: 3px solid black;
+    width: 120px;
+    height: 40px;
+    background-image: url('../img/youtubeBlack.png');
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+.box5:hover{
+    background-image: url('../img/youtube.png');
+    border-bottom: 3px solid red;
+}
+.box5:hover a{
+    color: red;
+}
