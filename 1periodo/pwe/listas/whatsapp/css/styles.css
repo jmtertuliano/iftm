@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.box {
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    /* background-color: rgba(252, 252, 206, 0.8); */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-image: url('../img/whatsapp1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
