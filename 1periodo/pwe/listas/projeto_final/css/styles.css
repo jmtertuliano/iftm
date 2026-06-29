@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* ===== HEADER / MENU ===== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #002776;
+    border-bottom: 4px solid #ffcc29;
+}
+
+header nav ul li {
+    list-style: none;
+    text-align: center;
+}
+
+header nav a:link,
+header nav a:visited {
+    color: white;
+    padding: 18px 22px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #ffcc29;
+    color: #002776;
+    transform: scale(1.1);
+}
+
+/* ===== BANNER (TOPO) ===== */
+.topo {
+    background-image: url('../img/image-23-1024x576.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.topo h1 {
+    font-size: 32px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.topo p {
+    max-width: 700px;
+    margin-top: 15px;
+    font-size: 17px;
+    text-shadow: 1px 1px 4px white;
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+    width: 100%;
+    padding: 40px 25px;
+}
+
+section p {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #046a38;
+}
+
+section h3 {
+    margin: 15px 0px 10px 0px;
+    color: #002776;
+}
+
+section ul {
+    margin: 10px 0px 10px 22px;
+    line-height: 1.8;
+}
+
+section:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+
+section:nth-of-type(even) {
+    background-color: #e8e8e8;
+}
+
+/* ===== BOTÕES ===== */
+section button {
+    color: white;
+    border-radius: 6px;
+    padding: 10px 22px;
+    margin: 15px 0px;
+    border: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btnVerde {
+    background-color: #046a38;
+}
+
+.btnAzul {
+    background-color: #002776;
+}
+
+section button:hover {
+    background-color: #ffcc29;
+    color: #002776;
+    cursor: pointer;
+    transform: scale(1.06);
+}
+
+/* ===== CONTAINER (COLUNAS) ===== */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container>div {
+    flex: 1;
+}
+
+/* ===== CARDS ===== */
+.cartao {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.cartao img {
+    max-width: 200px;
+    margin-bottom: 12px;
+}
+
+.cartoes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cartoes .cartao {
+    flex: 1 1 200px;
+    max-width: 260px;
+}
+
+/* ===== DESTAQUE / CURIOSIDADE ===== */
+.destaque {
+    background-color: #fff8e1;
+    border-left: 6px solid #ffcc29;
+    border-radius: 6px;
+    padding: 18px 20px;
+    margin: 15px 0px;
+}
+
+/* ===== LINHA DO TEMPO ===== */
+.linhaTempo {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.linhaTempo>div {
+    flex: 1;
+}
+
+.linhaTempo .cartao {
+    border-top: 6px solid #046a38;
+}
+
+/* ===== IMAGENS GERAIS DENTRO DAS SEÇÕES ===== */
+.container img {
+    width: 100%;
+    max-width: 640px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #002776;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-top: 4px solid #ffcc29;
+}
+
+footer p {
+    margin: 5px 0px;
+}
+
+/* ===== RESPONSIVO PARA TELAS MAIORES ===== */
+@media screen and (min-width: 768px) {
+    section {
+        width: 1100px;
+        margin: auto;
+    }
+
+    .topo h1 {
+        font-size: 46px;
+    }
+
+    .topo p {
+        font-size: 18px;
+    }
+
+    .container {
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .container div img {
+        max-width: 500px;
+    }
+
+    .linhaTempo {
+        flex-direction: row;
+    }
+
+}
