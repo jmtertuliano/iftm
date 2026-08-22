@@ -1,0 +1,3 @@
+alert (prompt("Digite um texto:").split(" ").length);
+
+
